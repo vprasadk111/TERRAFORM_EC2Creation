@@ -7,7 +7,7 @@ pipeline {
             }
         }
         
-      tage("Print hostname"){
+      stage("Print hostname"){
             steps{
                 sh 'hostname -i'
             }
