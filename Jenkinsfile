@@ -20,7 +20,8 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/vprasadk111/TERRAFORM_EC2Creation.git"
+                            //git "https://github.com/vprasadk111/TERRAFORM_EC2Creation.git"
+                            git branch: 'main', credentialsId: '19317b53-1a11-4058-bc37-57fa86794fb8', url: 'https://github.com/vprasadk111/TERRAFORM_EC2Creation'
                         }
                     }
                 }
